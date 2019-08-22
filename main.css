@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  min-width: 1200px;
+} */
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+body {
+  color: #413d71;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+header {
+  padding: 30px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+header ul li {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.container-fluid {
+  margin: 0 5%;
+  padding: 0 20px;
+}
+
+.container-fluid .top-menu {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr 1fr;
+  margin-bottom: 1.5rem;
+}
+
+.container-fluid .top-menu .logo h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  padding: 5px;
+  text-decoration: none;
+  color: #413d71;
+}
+
+.container-fluid .top-menu .logo h2 span {
+  color: #0367fb;
+}
+
+.container-fluid .top-menu .search-area {
+  background: #e0e4ef;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container-fluid .top-menu .search-area .fas {
+  color: #447eef;
+  font-size: 1rem;
+  position: relative;
+  top: 2px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.container-fluid .top-menu .search-area input[type="search"] {
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    max-width: 250px;
+    margin-top: 7px;
+    text-align: center;
+    background: #e0e4ef;
+    position: relative;
+}
+
+.container-fluid .top-menu .menu {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  
+}
+
+.container-fluid .top-menu .menu a{
+  position: relative;
+  top: 20px;
+  margin:0 15px;
+  color: #413d71;
+}
+
+.container-fluid .top-menu .menu a .far {
+  color: #5ecfb4;
+  font-size: 0.9rem;
+  margin-right: 3px;
+} 
+
+.container-fluid .top-menu .menu a .fas {
+  color: #34b7eb;
+  font-size: 0.9rem;
+  margin-right: 3px;
+  text-align: center;
+}
+
+.container-fluid .top-menu .trial {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container-fluid .top-menu .trial a {
+  text-decoration: none;
+  color: #e86a84;
+  font-weight: 500;
+  font-size: 0.75rem;
+  position: relative;
+  top: 16px;
+  border: 1.5px solid #e76269;
+  border-radius: 35px;
+  padding: 10px 30px;
+}
+/***************** BOTTOM MENU ********************8*/
+.container-fluid .bottom-menu {
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+  border-top: 1px solid #d6dbe2;
+  margin-bottom: 25px;
+}
+
+.container-fluid .bottom-menu ul li {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding-top: 1.75rem;
+}
+
+.container-fluid .bottom-menu ul li a {
+  color: #535b99;
+}
+
+.container-fluid .bottom-menu .bl ul li {
+  padding: 0 30px;
+  padding-top: 1.75rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.77rem;
+  font-weight: 500;
+}
+
+.container-fluid .bottom-menu .bl ul .active {
+  border-top: 2px solid #e92e01;
+}
+
+.container-fluid .bottom-menu .bl ul .active a {
+  color: #e92e01;
+}
+
+.container-fluid .bottom-menu .bl ul li:hover {
+  border-top: 2px solid #e92e01;
+  transition: 0.2s all ease-in-out;
+  
+}
+
+.container-fluid .bottom-menu .bl ul li a:hover {
+  color: #e92e01;
+  transition: 0.2s all ease-in-out;
+}
+
+/***** bottom right menu ***/
+
+.container-fluid .bottom-menu .br {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.container-fluid .bottom-menu .br .br-menu {
+  color: #535b99;
+  padding-top: 1.75rem;
+  text-align: center;
+}
+
+.container-fluid .bottom-menu .br .br-menu a {
+  color: #535b99;
+  font-size: 0.77rem;
+  font-weight: 500;
+  margin-right: 70px;
+  
+}
+
+.container-fluid .bottom-menu .br .social-media {
+  text-align: center;
+  color: #535b99;
+}
+
+.container-fluid .bottom-menu .br .social-media ul li {
+  margin: 0 10px;
+  color: #535b99;
+}
+.container-fluid .bottom-menu .br .social-media ul li a .fab {
+  color: #535b99;
+}
+/*********************** MAIN INFO SECTION ****************************/
+header .bg-img {
+  background: url("https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1437/https://www.learncomputerscienceonline.com/wp-content/uploads/2019/06/Fields-Of-Study-In-Computer-Science.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 0 0 72px;
+  height: 100%;
+  margin: 0 5%;
+  padding: 0 20px;
+}
+
+header .bg-img .info .main-info {
+  width: 50%;
+  text-align: center;
+  padding: 70px 80px;
+}
+
+header .bg-img .info  {
+  padding-top: 90px;
+}
+
+header .bg-img .info .large-txt {
+  font-family: 'Satisfy', cursive;
+  font-size: 15rem;
+  color: rgb(255, 255, 255);
+  opacity: 0.15;
+  position: absolute;
+  top: 174px;
+  left: 120px;
+  letter-spacing: 2px;
+}
+
+header .bg-img .info .main-info p {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.77rem;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+header .bg-img .info .main-info h1 {
+  font-size: 3.4rem;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* img info buttons */
+header .bg-img .info .main-info:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header .bg-img .info .main-info .btns {
+  display: inline-block;
+  float: left;
+  margin: 50px 0;
+}
+
+header .bg-img .info .main-info .btns a {
+  padding: 15px 40px;
+  border-radius: 35px;
+}
+
+header .bg-img .info .main-info .btns .green-btn {
+  background-color: #23ffcd;
+  color: #00346d;
+  margin-right: 10px;
+}
+
+header .bg-img .info .main-info .btns .clear-btn {
+  border: 1px solid #34b7eb;
+  color: #34b7eb;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: white;
+}
+
+
+
